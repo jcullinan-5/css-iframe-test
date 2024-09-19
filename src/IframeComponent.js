@@ -1,8 +1,26 @@
 import React from 'react';
+import Montserrat from './fonts/Montserrat-VariableFont_wght.ttf';
 
 const IframeComponent = () => {
-  const widgetId = 343067; 
+  const widgetId = 343067; // Replace with the appropriate widget ID if needed
+
   const iframeSrc = `
+    <style>
+      @font-face {
+        font-family: 'Montserrat';
+        src: url('${Montserrat}') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* Apply the Montserrat font to all text within the iframe */
+      body, .yext-menu-title, .yext-menu-item-name, .yext-menu-item-option, .yext-menu-item-desc, .yext-menu-section-title {
+        font-family: 'Montserrat', sans-serif !important;
+      }
+
+      /* Your other custom styles here */
+    </style>
+
     <div>
       <script src="https://sites.yext.com/${widgetId}-menu.js"></script>
       <script>
