@@ -19,32 +19,32 @@ const IframeComponent = () => {
       }
 
       .yext-menus-list {
-          display: flex !important;         /* Use flexbox for layout */
-          justify-content: space-around !important; /* Distribute items evenly with space between */
-          align-items: center !important;   /* Center items vertically */
-          width: 100% !important;           /* Ensure the container takes up the full width of the screen */
-          padding: 0 !important;            /* Remove any default padding */
-          margin: 0 auto !important;        /* Center the container if needed */
-          list-style-type: none !important; /* Remove bullets if it's a list */
+          display: flex !important;         
+          justify-content: space-around !important; 
+          align-items: center !important;  
+          width: 100% !important;          
+          padding: 0 !important;           
+          margin: 0 auto !important;       
+          list-style-type: none !important;
       }
           
 
       .yext-menu-title {
           --tw-bg-opacity: 1;
           background-color: rgb(255 81 0 / var(--tw-bg-opacity)) !important;
-          border-radius: 9999px !important; /* Ensure the element has fully rounded corners */
-          padding: 0 !important; /* No extra padding since flexbox will handle alignment */
+          border-radius: 9999px !important; 
+          padding: 0 !important; 
           color: white !important;
           margin-bottom: 1em !important;
-          width: 116px !important;  /* Fixed width for the circle */
-          height: 116px !important; /* Fixed height for the circle */
-          display: flex !important; /* Use flexbox for centering */
-          align-items: center !important;  /* Vertically center the text */
-          justify-content: center !important; /* Horizontally center the text */
+          width: 116px !important;  
+          height: 116px !important; 
+          display: flex !important; 
+          align-items: center !important;  
+          justify-content: center !important; 
           text-align: center !important;
-          font-size: 0.875rem !important; /* Adjust font size */
+          font-size: 0.875rem !important; 
           font-weight: bold !important;
-          overflow: hidden !important;  /* Prevent overflow of content */
+          overflow: hidden !important;  
       }
       .yext-active {
       background-color: #767676 !important; 
